@@ -8,9 +8,13 @@ namespace week4exercise
         {
             //Start the program with Clear();
             Console.Clear();
+
             
-            
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Please enter in your first name");
+            var fname = Console.ReadLine();
+            Console.WriteLine("Please enter in your last name");
+            var lname = Console.ReadLine();
+            Console.WriteLine($"Your name is {fname} {lname}");
 
 
             //End the program with blank line and instructions
