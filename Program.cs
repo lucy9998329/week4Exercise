@@ -17,8 +17,10 @@ namespace week4exercise
             Console.WriteLine($"Your name is {fname} {lname}");*/
             
 
+
+
             //ask the user for a number input
-            var counter = 12;
+            /*var counter = 12;
             var i = 0;
 
             Console.WriteLine("Please enter in a number");
@@ -28,7 +30,63 @@ namespace week4exercise
                 var a = i + 1;
                 Console.WriteLine($"{number} x {a} = {number * a}");
                 Console.ReadLine();
+            }*/
+
+            
+            //using forloop to ask for a set of numbers
+            /*int counter = 5;
+            int number = 0;
+            for (var i = 0; i < counter; i++)
+            {
+                Console.WriteLine("Please enter in a number");
+                int userInput = int.Parse(Console.ReadLine());
+                number += userInput;
             }
+                Console.WriteLine($"The total of the numbers you entered is {number}");
+                Console.WriteLine($"The avarage of the numbers you entered is {number/counter}");*/
+
+
+
+
+            /*string Km = "Km";
+            string Miles = "Miles";
+            Console.WriteLine("Please choose: kilometers or Miles");
+            string userChoise = Console.ReadLine();
+            if(userChoise == Miles)
+            {
+                Console.WriteLine("I will convert miles to kilometers. Please enter a number");
+                Double miles = Double.Parse(Console.ReadLine());
+                Console.WriteLine($"{miles} miles in km is {miles * 1.61}");
+                
+            }
+            if (userChoise == Km)
+            {
+                Console.WriteLine("I will convert kilometers to Miles. Please enter a number");
+                Double kilometers = Double.Parse(Console.ReadLine());
+                Console.WriteLine($"{kilometers} km in Mile is {kilometers * 0.62}");
+            }*/
+
+            string km = "km";
+            string Mile = "Miles";
+            Console.WriteLine("Please choose the conversion you want to use: Km or Mile");
+            string userChoise = Console.ReadLine(); 
+
+            if(userChoise == Mile)
+            {
+                Console.WriteLine("I will convert Miles to kilometer. Please enter a number");
+                Double miles = Double.Parse(Console.ReadLine());
+                Double convertMiles = Math.Round(miles * 1.609344, 2);
+                Console.WriteLine($"{convertMiles} kilometers");
+            }   
+
+            if(userChoise == km)
+            {
+                Console.WriteLine("I will convert kilometer to Miles. Please enter a number");
+                Double kilometer = Double.Parse(Console.ReadLine());
+                Double convertkm = Math.Round(kilometer * 0.62137119, 2);
+                Console.WriteLine($"{convertkm} Miles");
+            }          
+
 
             
             //End the program with blank line and instructions
