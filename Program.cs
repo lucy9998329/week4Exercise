@@ -66,7 +66,7 @@ namespace week4exercise
                 Console.WriteLine($"{kilometers} km in Mile is {kilometers * 0.62}");
             }*/
 
-            string km = "km";
+            /*string km = "km";
             string Mile = "Miles";
             Console.WriteLine("Please choose the conversion you want to use: Km or Mile");
             string userChoise = Console.ReadLine(); 
@@ -85,7 +85,34 @@ namespace week4exercise
                 Double kilometer = Double.Parse(Console.ReadLine());
                 Double convertkm = Math.Round(kilometer * 0.62137119, 2);
                 Console.WriteLine($"{convertkm} Miles");
-            }          
+            } */
+
+
+
+            //diameter of the circle
+           /* const double pi = 3.14;
+            Console.WriteLine("What is the diameter of the circle?");
+            int dia = int.Parse(Console.ReadLine());
+            double rad = dia/2;
+            double cir = 2*pi*rad;
+            Console.WriteLine($"the circunference of the circle is {cir}");*/         
+
+
+
+            //finding the area
+            int side1;
+            int side2;
+            Console.WriteLine("What is the length of the first side");
+            side1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("What is the length of the second side");
+            side2 = int.Parse(Console.ReadLine());
+            int perimeter = (side1 + side2)*2;
+            int area = side1 * side2;
+            Console.WriteLine($"The perimeter of the shape is {perimeter}");
+            Console.WriteLine($"The area of the shape is {area}");
+            
+
+
 
 
             
