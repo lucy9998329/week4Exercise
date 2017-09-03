@@ -100,7 +100,7 @@ namespace week4exercise
 
 
             //finding the area
-            int side1;
+           /* int side1;
             int side2;
             Console.WriteLine("What is the length of the first side");
             side1 = int.Parse(Console.ReadLine());
@@ -109,8 +109,50 @@ namespace week4exercise
             int perimeter = (side1 + side2)*2;
             int area = side1 * side2;
             Console.WriteLine($"The perimeter of the shape is {perimeter}");
-            Console.WriteLine($"The area of the shape is {area}");
+            Console.WriteLine($"The area of the shape is {area}");*/
+
+
+
+            //Flipping coin
+            /*Random rng = new Random();
+            string coinDescription;
+            int coin = 0;
+            //get a random number for the coin
             
+            Console.WriteLine("Press key to toss");
+            var userInput = Console.ReadLine();
+
+            for(int i = 0; i <= 3; i++)
+            {
+                coin = rng.Next(0, 2);
+
+                if(coin == 1)
+                {
+                    coinDescription = "heads";
+                }
+                else 
+                {
+                    coinDescription = "tails";
+                }
+                Console.WriteLine("The coin flipped was {0}", coinDescription);
+            }*/
+
+
+
+
+            //adding 3 numbers together and add 15%
+            int counter = 3;
+            
+            Console.WriteLine("Enter in the first number");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter in the second number");
+            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter in the third number");
+            int num3 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine((num1 + num2 + num3)*1.15);
+
+        
 
 
 
